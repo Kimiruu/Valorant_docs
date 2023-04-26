@@ -1,0 +1,123 @@
+.Agents {
+    padding-top: 100px; 
+    .searchbarcontainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    .searchBar {
+        display: flex;
+        border-bottom: 1px solid #ebebeb;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        gap: 5px;
+
+        input {
+            background-color: #0f1923;
+            border: none;
+            outline: none;
+            color: #ebebeb;
+            width: 600px;
+        }
+    }
+    .buttonsContainer {
+        margin-left: 180px;
+        display: flex;
+        gap: 38px;
+        margin-bottom: 45px;
+        button {
+            background-color: #354759;
+            border: none;
+            width: 133px;
+            height: 38px;
+            border-radius: 20px;
+            color: #ebebeb;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #182837;
+            transition: 0.2s;
+        }
+        .active {
+            background-color: #182837;
+        }
+
+    }
+    .separator {
+        box-sizing: border-box;
+        height: 1px;
+        margin-right: 7%;
+        margin-left: 7%;
+        background-color: #090f15;
+        margin-bottom: 45px;
+    }
+
+    .agentresume {
+        position: relative;
+        border-radius: 20px;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        --color1: #ffff;
+        --color2: #ffff;
+        --color3: #ffff;
+        --color4: #ffff;
+        background: linear-gradient(
+            180deg,
+            var(--color1) 0%,
+            var(--color2) 33%,
+            var(--color3) 66%,
+            var(--color4) 100%
+        );
+        img {
+            position: absolute;
+            height: 700px;
+            transform: translateX(-50%);
+            transform-origin: center;
+            left: 50%;
+            top: -70px;
+        }
+        .front {
+            z-index: 1;
+            transition: transform 0.2s;
+        }
+        .front:hover {
+            transform-origin: center;
+            transform: scale(1.1) translateX(-45%);
+        }
+        .back {
+            top: -90px;
+            height: auto;
+            width: 100%;
+        }
+        .namecontainer {
+            position: absolute;
+            bottom: 0;
+            height: 65px;
+            background-color: #b22740;
+            width: 100%;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ebebeb;
+            font-family: "Oswald", sans-serif;
+            font-size: 30px;
+            font-weight: 600;
+        }
+    }
+    .agentcontainer {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 60px;
+        width: 1900px;
+        max-width: 90vw;
+        margin: auto;
+    }
+}

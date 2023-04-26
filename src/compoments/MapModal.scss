@@ -1,0 +1,87 @@
+    img {
+        height: 400px;
+    }
+    .textbg {
+        position: absolute;
+        top: -75px;
+        left: -5px;
+        font-size: 250px;
+        font-family: "Oswald";
+        font-weight: 600;
+        color: #ffffff00;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #778991;
+        height: fit-content;
+        z-index: 0;
+    }
+    .cross {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        margin-right: 15px;
+        z-index: 2;
+    }
+    .square {
+        position: absolute;
+        margin-left: 100px;
+        margin-top: 220px;
+        height: 5px;
+        width: 5px;
+        background-color: #d9d9d9;
+    }
+    .container {
+        top: -19px;
+        position: relative;
+        display: flex;
+        height: 100%;
+        z-index: 1;
+        .containerleft {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 25px;
+            padding-right: 25px;
+            gap: 7px;
+            .title {
+                font-family: "Tungsten";
+                font-size: 40px;
+            }
+            .coordonate {
+                font-family: 'Oswald';
+                font-weight: 300;
+                letter-spacing: 6px;
+            }
+            .description {
+                margin-top: 15px;
+            }
+        }
+        .containerright {
+            padding-top: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 70%;
+            border-left: #f4f1ed solid 1px;
+            .carre {
+                position: absolute;
+                height: 5px;
+                width: 5px;
+                margin-top: 385px;
+                background-color: white;
+                margin-left: 45px;
+            }
+            .caroussel {
+                display: flex;
+                overflow-x: scroll;
+                width: 100%;
+                gap: 35px;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            .caroussel::-webkit-scrollbar {
+                display: none;
+              }
+            
+        }
+    }

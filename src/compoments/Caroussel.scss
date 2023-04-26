@@ -1,0 +1,11 @@
+.Caroussel {
+    .swiper-wrapper {
+        cursor: grab;
+    }
+    .swiper-wrapper:active {
+        cursor: grabbing;
+    }
+    .swiper-slide-active {
+        width: fit-content;
+    }
+}

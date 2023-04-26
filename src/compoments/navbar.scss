@@ -1,0 +1,30 @@
+.Navbar {
+    height: 70px;
+    width: 100%;
+    background-color: #090F15;
+    position: fixed;
+    z-index: 5;
+    font-family: 'Oswald';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    .containernavleft {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .logo {
+            height: 45px;
+        }
+        .imgname {
+            height: 30px;
+        }
+    }
+    .containernavright {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,21 @@
+.CardHome {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    .titlecontainer {
+        height: 62px;
+        width: 311px;
+        background-color: #B22740;
+        border-radius: 10px 10px 0px 0px;
+        font-family: 'Oswald';
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image {
+        height: max-content;
+        width: 311px;
+    }
+}

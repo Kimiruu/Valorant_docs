@@ -1,0 +1,107 @@
+.maps {
+    padding-top: 100px;
+    .searchbarcontainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
+        .searchBar {
+            display: flex;
+            border-bottom: 1px solid #ebebeb;
+            align-items: center;
+            justify-content: center;
+            width: 600px;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            gap: 5px;
+
+            input {
+                background-color: #0f1923;
+                border: none;
+                outline: none;
+                color: #ebebeb;
+                width: 600px;
+            }
+        }
+    }
+    .separator {
+        box-sizing: border-box;
+        height: 1px;
+        margin-right: 7%;
+        margin-left: 7%;
+        background-color: #090f15;
+        margin-bottom: 45px;
+    }
+    .mapcontainer {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 60px;
+        width: 1900px;
+        max-width: 90vw;
+        margin: auto;
+        .mapresume {
+            position: relative;
+            border-radius: 20px;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            img {
+                position: absolute;
+                width: 731px;
+                transform: translate(-30%, -4%);
+            }
+            .namecontainer {
+                position: absolute;
+                bottom: 0;
+                height: 65px;
+                background-color: #b22740;
+                width: 100%;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #ebebeb;
+                font-family: "Oswald", sans-serif;
+                font-size: 30px;
+                font-weight: 600;
+            }
+            svg {
+                z-index: 2;
+                position: absolute;
+                bottom: 10px;
+                right: 15px;
+            }
+        }
+    }
+    .modalContainer {
+        /* positionnement */
+        position: fixed;
+        inset: 0;
+        z-index: 5;
+
+        /* taile */
+        height: 100%;
+        width: 100%;
+
+        /* positionnement des enfants */
+        display: grid;
+        place-items: center;
+        .modal {
+            position: absolute;
+            bottom: 0;
+            box-sizing: border-box;
+            background-color: #2B3B4B;
+            color: white;
+            z-index: 2;
+            height: calc(100% - 70px);
+            width: 100%;
+            }
+        }
+    }
+    .modalContainer.inactive {
+        /* cacher quand inactif */
+        display: none;
+    }
+
